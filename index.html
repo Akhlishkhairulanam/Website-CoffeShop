@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Akhlish Coffe</title>
+
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Box Icons -->
+    <link rel="stylesheet" 
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+
+        <!--Menu Icon-->
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <!--Link-->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#customers">customers</a></li>
+        </ul>
+
+        <!--Icons-->
+        <div class="header-icon">
+            <i class='bx bx-cart' ></i>./
+            <i class='bx bx-search' id="search-icon" ></i>
+        </div>
+
+        <!--Search Box-->
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search...">
+        </div>
+    </header>  
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Start your day <br> with coffee</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum soluta dolorem veritatis consequatur dolore adipisci temporibus maxime officia atque maiores, recusandae, illum modi? Quia itaque inventore sint neque quod modi.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="img/main.png" alt="">
+        </div>
+    </section>
+
+<!-- Add more menu items as needed -->
+        <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart"></ul>
+        <p id="total">Total: $0.00</p>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+
+    <!--About-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis, beatae ex nemo ea amet, distinctio, eos nesciunt enim rerum alias veritatis ullam iusto saepe nisi architecto dicta aliquam nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error reiciendis, beatae ex nemo ea amet, distinctio, eos nesciunt enim rerum alias veritatis ullam iusto saepe nisi architecto dicta aliquam nulla.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit vel natus officiis cupiditate modi.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!--Product-->
+    <section class="section" id="products">
+        <div class="heading">
+            <h2>Our Popular Products</h2>
+        </div>
+
+        <!--Container-->
+        <div class="products-container">
+            <div class="box">
+                <img src="img/p1.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>25.000</span>
+                    <button class="btn" onclick="addToCart('Americano Pure', 25.000)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/p2.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>20.000</span>
+                    <button class="btn" onclick="addToCart('Product 2', 20.000)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/p3.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>15.000</span>
+                    <button class="btn" onclick="addToCart('Product 3', 15.000)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/p4.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>10.000</span>
+                    <button class="btn" onclick="addToCart('Product 4', 10.000)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/p5.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>25.000</span>
+                    <button class="btn" onclick="addToCart('Product 5', 25.000)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/p6.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>20.000</span>
+                    <button class="btn" onclick="addToCart('Product 6', 20.000)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Customers-->
+<section class="customers" id="customers">
+    <div class="heading">
+        <h2>Our Customer's</h2>
+    </div>
+
+    <!--Container-->
+    <div class="customer-container">
+    <div class="box">
+        <div class="stars">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam maiores tenetur asperiores, provident accusamus nihil.</p>
+        <h2>Akhlish</h2>
+        <img src="img/Akh.jpeg" alt="">
+    </div>
+    <div class="box">
+        <div class="stars">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam maiores tenetur asperiores, provident accusamus nihil.</p>
+        <h2>Khairul</h2>
+        <img src="img/Khai.jpeg" alt="">
+    </div>
+    <div class="box">
+        <div class="stars">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam maiores tenetur asperiores, provident accusamus nihil.</p>
+        <h2>Anam</h2>
+        <img src="img/Anam.jpeg" alt="">
+    </div>
+</div>
+</section>
+<section class="footer">
+    <div class="footer-box">
+        <h2>Coffee Shop</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, at.</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Trems Of Use</a></li>
+        <li><a href="#">Product</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>view Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+            <spam><i class='bx bxs-map'></i>Semarang City, 1500 IND</spam>
+            <spam><i class='bx bxs-phone'></i>+62 8217 0783 200</spam>
+            <spam><i class='bx bxs-envelope'></i>coffee@shop.com</spam>
+        </div>
+    </div>
+</section>
+
+<!--Copyright-->
+<div class="copyright">
+        <p>&#169; By Akhlish Khairul Anam</p>
+</div>
+
+    <!--Link To JS-->
+    <script src="main.js"></script>
+</body>
+</html>
